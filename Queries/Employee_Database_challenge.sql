@@ -55,3 +55,9 @@ INTO mentorship_titles
 FROM mentorship_eligibility AS me
 GROUP BY me.title
 ORDER BY COUNT(title) DESC;
+
+SELECT COUNT (emp_no)
+FROM unique_titles;
+
+SELECT COUNT (emp_no)
+FROM mentorship_eligibility;

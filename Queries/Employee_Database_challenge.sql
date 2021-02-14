@@ -47,3 +47,11 @@ FROM employees AS e
 WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 	AND (de.to_date = '9999-01-01')
 ORDER BY e.emp_no;
+
+-- Summary README
+-- Determine mentorship titles by count
+SELECT COUNT (me.emp_no), me.title
+INTO mentorship_titles
+FROM mentorship_eligibility AS me
+GROUP BY me.title
+ORDER BY COUNT(title) DESC;

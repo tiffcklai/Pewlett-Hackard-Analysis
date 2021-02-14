@@ -142,3 +142,33 @@ INNER JOIN dept_emp AS de
 ON (ce.emp_no = de.emp_no)
 INNER JOIN departments AS d
 ON (de.dept_no = d.dept_no);
+
+-- Sales Department Retirees
+SELECT ce.emp_no,
+	ce.first_name,
+	ce.last_name,
+	d.dept_name
+INTO sales_info
+FROM current_emp AS ce 
+	INNER JOIN dept_emp AS de 
+		ON (ce.emp_no = de.emp_no)
+	INNER JOIN departments AS d
+		ON (de.dept_no = d.dept_no)
+WHERE (de.dept_no = 'd007');
+
+SELECT * FROM sales_info;
+
+-- Sales and Development Department Retirees
+SELECT ce.emp_no,
+	ce.first_name,
+	ce.last_name,
+	d.dept_name
+INTO sales_development_info
+FROM current_emp AS ce 
+	INNER JOIN dept_emp AS de 
+		ON (ce.emp_no = de.emp_no)
+	INNER JOIN departments AS d
+		ON (de.dept_no = d.dept_no)
+WHERE de.dept_no IN ('d007', 'd005');
+
+SELECT * FROM sales_development_info;

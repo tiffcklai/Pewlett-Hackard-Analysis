@@ -23,7 +23,7 @@ To prepare for the "silver tsunami" at Pewlett Hackard, the following analysis w
 
 It is clear from the table below that the majority of those retiring are in senior positions, with senior engineers and senior staff being the top 2 title categories retiring. The total number of retiring staff who were born from 1952 to 1955 is 90,398. Of this retiree group, 32.5% are senior engineers, 31.3% are senior staff, 15.7% are engineers, 13.5% are staff, 5.0% are technique leaders, 2.0% are assistant engineers, and less than 0.0% are managers. 
 
-With such a large number of employees retiring, and so little of them being managers, this could be a great opportunity for Pewlett Hackard to determine why some of the senior level employees were not given the opportunity to become a manager themselves. Or they can explore the other routes for why this was the case; for example, another explanation could be due to younger managers who are not retiring soon and therefore, were no captured in this analysis.
+With such a large number of employees retiring, and so little of them being managers, this could be a great opportunity for Pewlett Hackard to determine why some of the senior level employees were not given the opportunity to become a manager themselves. Or they can explore the other routes for why this was the case; for example, another explanation could be due to younger managers who are not retiring soon and therefore, were not captured in this analysis.
 
 **Number of retiring staff by titles** 
 

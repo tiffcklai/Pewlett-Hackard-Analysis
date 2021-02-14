@@ -56,8 +56,10 @@ FROM mentorship_eligibility AS me
 GROUP BY me.title
 ORDER BY COUNT(title) DESC;
 
+-- Count of employees retiring
 SELECT COUNT (emp_no)
 FROM unique_titles;
 
+-- Count of employees eligible for mentorship
 SELECT COUNT (emp_no)
 FROM mentorship_eligibility;

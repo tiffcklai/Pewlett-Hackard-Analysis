@@ -37,6 +37,13 @@ A total number of 90,398 roles will have to be filled as the silver tsunami begi
 
 **Additional queries made for this analysis:**
 ``` 
+-- Mentorship Titles
+SELECT COUNT (me.emp_no), me.title
+INTO mentorship_titles
+FROM mentorship_eligibility AS me
+GROUP BY me.title
+ORDER BY COUNT(title) DESC;
+
 -- Count of employees retiring
 SELECT COUNT (emp_no)
 FROM unique_titles;
